@@ -1,0 +1,54 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+	<g:HTMLPanel>
+		<div id="contentWrapper">
+
+			<!-- Profile -->
+			<div id="contentWrapperProfile" ng-hide="getShowAttribute()">
+				<div id="profileImageWrapper">
+					<div id="profileTextContainer">
+						<p> {{ descriptionShort }} </p>
+						<p>{{ description }}</p>
+					</div>
+					<img class="headerImage" src="lib/Fjugesta98.jpg"/>
+				</div>
+
+				<div id="socials">
+					<a class="linkedIn" target="_blank"
+						href="https://se.linkedin.com/pub/{{ linkedInName }}"></a>
+					<a class="gitHub" target="_blank" href="https://github.com/{{ gitHubName }}"></a>
+				</div>
+			</div>
+
+			<div id="contentWrapperExpEdu">
+
+				<!-- Experience -->
+				<div id="contentWrapperExperience">
+					<h2>Experience</h2>
+					<div class="InfosTable">
+						<span class="date">{{ exp.fromYear }} - {{ exp.toYear }}</span>
+						<span class="content">
+							<h4>{{ exp.companyName}}</h4>
+							<p>{{ exp.descriptionShort }}</p>
+						</span>
+					</div>
+				</div>
+
+				<!-- Education -->
+				<div id="contentWrapperEducation">
+					<h2>Education</h2>
+					<div class="InfosTable">
+						<span class="date">{{ edu.fromYear }} - {{ edu.toYear }}</span>
+						<span class="content">
+							<h4>{{ edu.name }}</h4>
+							<p>{{ edu.descriptionShort }}</p>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div id="footer">Code by {{ name }}</div>
+		</div>
+	</g:HTMLPanel>
+
+</ui:UiBinder>

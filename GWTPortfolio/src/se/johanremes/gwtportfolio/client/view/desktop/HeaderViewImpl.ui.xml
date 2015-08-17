@@ -1,0 +1,17 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel>
+		<div id="headerWrapper">
+			<div id="headerContent">
+				<div id="headerLeft">{{ name }}</div>
+				<div id="headerRight">
+					<a href="projects">PROJECTS</a>
+				</div>
+				<div id="headerRight">
+					<a href="profile">PROFILE</a>
+				</div>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 
